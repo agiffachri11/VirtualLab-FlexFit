@@ -14,7 +14,7 @@ FlexFit adalah platform kebugaran digital yang memberikan panduan latihan lengka
    Setelah memilih kategori, daftar latihan yang tersedia akan ditampilkan. Setiap latihan dilengkapi dengan video demonstrasi yang dapat Anda tonton untuk memahami teknik yang benar saat berlatih.
 
 4. **Atur Timer dan Interval**  
-   Di bawah setiap latihan, Anda akan menemukan pengaturan untuk timer. Anda dapat mengatur durasi latihan, durasi istirahat, dan jumlah interval yang ingin dilakukan. Setelah itu, tekan tombol “Mulai Latihan” untuk memulai sesi latihan Anda.
+   Di bawah setiap latihan, Anda akan menemukan pengaturan untuk timer. Anda dapat mengatur durasi latihan, durasi istirahat, dan jumlah interval yang ingin dilakukan. Setelah itu, tekan tombol **"Mulai Latihan"** untuk memulai sesi latihan Anda.
 
 5. **Progres Latihan**  
    Setelah menyelesaikan setiap latihan, Anda dapat menandai latihan tersebut dengan mengklik tombol **"Mark as Done"**. Progres latihan Anda akan ditampilkan dalam bentuk persentase di bagian bawah halaman latihan.
