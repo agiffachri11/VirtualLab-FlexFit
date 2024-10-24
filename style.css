@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f7;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0d0c27;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo img {
+  width: 130px;
+  height: auto;
+}
+
+/* Animasi typing */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Animasi blinking cursor */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #0d0c27;
+  }
+}
+
+/* Styling dasar untuk teks memakai animasi typing dan animasi blinking cursor*/
+h1 {
+  font-size: 48px;
+  margin: 20px 0;
+  color: #0d0c27;
+  overflow: hidden; /* Sembunyikan teks di luar area */
+  border-right: 3px solid #0d0c27; /* Membuat efek kursor */
+  white-space: nowrap; /* Mencegah teks memecah baris */
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite; /* Animasi typing dan blinking cursor */
+}
+
+/* Animasi fadeInUp */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Mulai dari posisi bawah */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Bergerak ke posisi normal */
+  }
+}
+
+p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 30px;
+  opacity: 0; /* Awalnya transparan */
+  animation: fadeInUp 2s ease-in-out forwards;
+  animation-delay: 3.5s; /* Mulai setelah animasi typing selesai */
+}
+
+.features {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.features h2 {
+  font-size: 36px;
+  color: #0d0c27;
+  margin-bottom: 40px;
+  opacity: 0; /* Awalnya transparan */
+  animation: fadeInUp 2s ease-in-out forwards;
+  animation-delay: 5s; /* Mulai setelah h1 dan p */
+}
+
+.feature-box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feature-item {
+  background-color: #0d0c27;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+  opacity: 0; /* Awalnya transparan */
+  animation: fadeInUp 2s ease-in-out forwards;
+  animation-delay: 6s; /* Mulai setelah h2 */
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .features h2 {
+    font-size: 28px;
+  }
+
+  .feature-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .feature-item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .features h2 {
+    font-size: 24px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .feature-item h3 {
+    font-size: 20px;
+  }
+
+  .feature-item p {
+    font-size: 14px;
+  }
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 1024px) {
+  .feature-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .features h2 {
+    font-size: 28px;
+  }
+
+  .feature-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .features h2 {
+    font-size: 24px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .feature-item h3 {
+    font-size: 20px;
+  }
+
+  .feature-item p {
+    font-size: 14px;
+  }
+}

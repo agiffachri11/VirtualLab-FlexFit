@@ -1,0 +1,293 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #0d0c27;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #0d0c27;
+}
+
+h2 {
+  font-size: 36px;
+  color: #0d0c27;
+  margin-top: 30px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.video-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+iframe {
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.progress-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #28a745;
+  width: 0%;
+  transition: width 0.5s ease;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0d0c27;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #1b1b38;
+  transform: scale(1.05);
+}
+
+.mark-done {
+  background-color: #28a745;
+  transition: background-color 0.3s ease;
+}
+
+.mark-done.done {
+  background-color: #218838;
+}
+
+#reset-button {
+  background-color: #ffeba7;
+  color: #0d0c27;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#reset-button:hover {
+  background-color: #e6c59b;
+}
+
+.home-button-container {
+  display: flex;
+  justify-content: flex-start; /* Atur ke kiri */
+  margin-bottom: 10px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #0d0c27;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.back-button:hover {
+  background-color: #1b1b38;
+  transform: scale(1.05);
+}
+
+.coming-soon {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #ffeb3b;
+  border: 2px dashed #0d0c27;
+  border-radius: 10px;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+#notify-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #0d0c27;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+#notify-button:hover {
+  background-color: #1b1b38;
+}
+
+.timer-settings {
+  margin: 10px 0;
+}
+
+.timer-settings label {
+  margin-right: 10px;
+}
+
+.timer-settings input {
+  width: 60px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.inputs {
+  margin-bottom: 20px;
+}
+
+input {
+  margin: 5px 0;
+  padding: 10px;
+  width: calc(100% - 22px);
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive layout */
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .video-container {
+    margin-bottom: 15px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .timer-settings input {
+    width: 50px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .timer-settings input {
+    width: 40px;
+    padding: 4px;
+  }
+
+  .inputs input {
+    width: calc(100% - 12px);
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 12px;
+  }
+}

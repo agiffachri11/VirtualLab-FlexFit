@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Latihan Fleksibilitas</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="home-button-container">
+                <button class="back-button" onclick="window.location.href='../index.html'">Home</button>
+            </div>
+
+            <h1>Fleksibilitas</h1>
+            
+            <h2>Latihan 1: Forward Bend</h2>
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/WklJNYaayP8?si=zio_sJvxXy08MoC8"
+                    title="Forward Bend Demonstration"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <p>
+                <strong>Teknik:</strong> Berdiri tegak dengan kaki selebar bahu. Perlahan bungkukkan tubuh ke depan dari pinggul, sambil menjaga kaki tetap lurus. Biarkan kepala dan tangan menggantung ke bawah.
+            </p>
+            <p>
+                <strong>Manfaat:</strong> Latihan ini membantu meningkatkan fleksibilitas punggung bawah dan hamstring.
+            </p>
+
+            <div class="timer-settings">
+                <label for="workout-duration-1">Durasi Latihan (detik):</label>
+                <input type="number" id="workout-duration-1" value="60">
+                <label for="rest-duration-1">Durasi Istirahat (detik):</label>
+                <input type="number" id="rest-duration-1" value="30">
+                <label for="interval-count-1">Jumlah Interval:</label>
+                <input type="number" id="interval-count-1" value="3">
+            </div>
+            <div id="interval-display-1">Interval: -</div>
+
+            <button id="start-button-1" onclick="startCountdown(1)">Mulai Latihan</button>
+            <button id="mark-done-1" class="mark-done" onclick="markAsDone(1)">Mark as Done</button>
+
+            <h2>Latihan 2: Butterfly Stretch</h2>
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/4J7kbCmPScQ?si=9RdbUHJWm1F14pTx"
+                    title="Butterfly Stretch Demonstration"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <p>
+                <strong>Teknik:</strong> Duduk di lantai dengan telapak kaki saling berhadapan dan lutut tertekuk ke samping. Tarik kedua kaki ke arah pangkal paha dan tekan lutut ke lantai secara perlahan sambil menjaga punggung tetap lurus.
+            </p>
+            <p>
+                <strong>Manfaat:</strong> Latihan ini meregangkan otot pangkal paha, paha bagian dalam, dan pinggul, serta meningkatkan mobilitas di area tersebut.
+            </p>
+
+            <div class="timer-settings">
+                <label for="workout-duration-2">Durasi Latihan (detik):</label>
+                <input type="number" id="workout-duration-2" value="60">
+                <label for="rest-duration-2">Durasi Istirahat (detik):</label>
+                <input type="number" id="rest-duration-2" value="30">
+                <label for="interval-count-2">Jumlah Interval:</label>
+                <input type="number" id="interval-count-2" value="3">
+            </div>
+            <div id="interval-display-2">Interval: -</div>
+
+            <button id="start-button-2" onclick="startCountdown(2)">Mulai Latihan</button>
+            <button id="mark-done-2" class="mark-done" onclick="markAsDone(2)">Mark as Done</button>
+
+            <h2>Latihan 3: Seated Trunk Twist</h2>
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/GksVR7GXjqA?si=irFSxoXIjF1p2V7n"
+                    title="Seated Trunk Twist Demonstration"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <p>
+                <strong>Teknik:</strong> Duduk dengan posisi kaki lurus di depan. Lipat salah satu kaki dan letakkan di samping paha kaki yang lurus. Putar tubuh ke arah lutut kaki yang dilipat dan tekan ringan untuk meningkatkan peregangan.
+            </p>
+            <p>
+                <strong>Manfaat:</strong> Latihan ini membantu meningkatkan fleksibilitas punggung dan memperbaiki postur.
+            </p>
+
+            <div class="timer-settings">
+                <label for="workout-duration-3">Durasi Latihan (detik):</label>
+                <input type="number" id="workout-duration-3" value="60">
+                <label for="rest-duration-3">Durasi Istirahat (detik):</label>
+                <input type="number" id="rest-duration-3" value="30">
+                <label for="interval-count-3">Jumlah Interval:</label>
+                <input type="number" id="interval-count-3" value="3">
+            </div>
+            <div id="interval-display-3">Interval: -</div>
+
+            <button id="start-button-3" onclick="startCountdown(3)">Mulai Latihan</button>
+            <button id="mark-done-3" class="mark-done" onclick="markAsDone(3)">Mark as Done</button>
+
+            <h2>Latihan 4: Tree Pose</h2>
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/uELr6MPi7pI?si=9O4YesSdZ8NVZq9V"
+                    title="Tree Pose Demonstration"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <p>
+                <strong>Teknik:</strong> Berdiri tegak, angkat satu kaki dan letakkan di bagian dalam paha atau betis kaki yang lain (hindari lutut). Pertahankan keseimbangan dan angkat kedua tangan ke atas.
+            </p>
+            <p>
+                <strong>Manfaat:</strong> Latihan ini meningkatkan keseimbangan dan fleksibilitas, serta membantu memperkuat otot kaki.
+            </p>
+
+            <div class="timer-settings">
+                <label for="workout-duration-4">Durasi Latihan (detik):</label>
+                <input type="number" id="workout-duration-4" value="60">
+                <label for="rest-duration-4">Durasi Istirahat (detik):</label>
+                <input type="number" id="rest-duration-4" value="30">
+                <label for="interval-count-4">Jumlah Interval:</label>
+                <input type="number" id="interval-count-4" value="3">
+            </div>
+            <div id="interval-display-4">Interval: -</div>
+
+            <button id="start-button-4" onclick="startCountdown(4)">Mulai Latihan</button>
+            <button id="mark-done-4" class="mark-done" onclick="markAsDone(4)">Mark as Done</button>
+
+            <h2>Latihan 5: (Akan Segera Dibuka!)</h2>
+            <div class="video-container">
+                <div class="coming-soon">
+                    <p>Latihan 5 Akan Segera Dibuka!</p>
+                </div>
+            </div>
+            <button id="notify-button">Notifikasi Pembukaan Latihan 5</button>
+
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <p id="progress-text">0% Selesai</p>
+                <button id="reset-button">Reset</button>
+            </div>
+
+            <audio id="audio-latihan" src="latihan.mp3" preload="auto"></audio>
+            <audio id="audio-istirahat" src="istirahat.mp3" preload="auto"></audio>
+            <audio id="audio-selamat" src="selamat.mp3" preload="auto"></audio>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

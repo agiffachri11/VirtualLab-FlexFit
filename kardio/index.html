@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Latihan Kardio</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="home-button-container">
+                <button class="back-button" onclick="window.location.href='../index.html'">Home</button>
+            </div>
+
+            <h1>Kardio</h1>
+
+            <h2>Latihan 1: Jumping Jacks</h2>
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/2W4ZNSwoW_4"
+                    title="Jumping Jacks Demonstration"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <p>
+                <strong>Teknik:</strong> Berdiri tegak dengan kaki rapat dan tangan di
+                sisi tubuh. Lompat dan buka kaki ke arah luar sambil angkat tangan ke
+                atas kepala, kemudian lompat kembali ke posisi awal.
+            </p>
+            <p>
+                <strong>Manfaat:</strong> Jumping jacks meningkatkan kekuatan kardiovaskular,
+                membakar kalori, dan melibatkan hampir seluruh tubuh.
+            </p>
+            <p>
+                <strong>Rekomendasi Jumlah:</strong>
+                <ul>
+                    <li><strong>Pemula:</strong> Sekitar 30-40 jumping jacks per menit.</li>
+                    <li><strong>Menengah:</strong> Sekitar 40-50 jumping jacks per menit.</li>
+                    <li><strong>Lanjutan:</strong> Lebih dari 50 jumping jacks per menit.</li>
+                </ul>
+            </p>
+
+            <div class="timer-settings">
+                <label for="workout-duration-1">Durasi Latihan (detik):</label>
+                <input type="number" id="workout-duration-1" value="60">
+                <label for="rest-duration-1">Durasi Istirahat (detik):</label>
+                <input type="number" id="rest-duration-1" value="30">
+                <label for="interval-count-1">Jumlah Interval:</label>
+                <input type="number" id="interval-count-1" value="3">
+            </div>
+            <div id="interval-display-1">Interval: -</div>
+
+            <button id="start-button-1" onclick="startCountdown(1)">Mulai Latihan</button>
+            <button id="mark-done-1" class="mark-done" onclick="markAsDone(1)">Mark as Done</button>
+
+            <h2>Latihan 2: Burpees</h2>
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/tJrdJBWBu08"
+                    title="Burpees Demonstration"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <p>
+                <strong>Teknik:</strong> Mulailah berdiri tegak, kemudian jongkok dan
+                letakkan tangan di lantai di depan kaki. Lompat ke posisi plank, lalu
+                lompat kembali ke posisi jongkok dan berdiri.
+            </p>
+            <p>
+                <strong>Manfaat:</strong> Burpees meningkatkan kekuatan dan daya tahan
+                kardiovaskular, serta melatih otot seluruh tubuh.
+            </p>
+            <p>
+                <strong>Rekomendasi Jumlah:</strong>
+                <ul>
+                    <li><strong>Pemula:</strong> Sekitar 10-15 burpees per menit.</li>
+                    <li><strong>Menengah:</strong> Sekitar 15-20 burpees per menit.</li>
+                    <li><strong>Lanjutan:</strong> Lebih dari 20 burpees per menit.</li>
+                </ul>
+            </p>
+
+            <div class="timer-settings">
+                <label for="workout-duration-2">Durasi Latihan (detik):</label>
+                <input type="number" id="workout-duration-2" value="60">
+                <label for="rest-duration-2">Durasi Istirahat (detik):</label>
+                <input type="number" id="rest-duration-2" value="30">
+                <label for="interval-count-2">Jumlah Interval:</label>
+                <input type="number" id="interval-count-2" value="3">
+            </div>
+            <div id="interval-display-2">Interval: -</div>
+
+            <button id="start-button-2" onclick="startCountdown(2)">Mulai Latihan</button>
+            <button id="mark-done-2" class="mark-done" onclick="markAsDone(2)">Mark as Done</button>
+
+            <h2>Latihan 3: Squat Jump</h2>
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/5xv0DKqe5XQ?si=c6EnORNLAdMBhvFR"
+                    title="Squat Jump Demonstration"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <p>
+                <strong>Teknik:</strong> Berdirilah dengan kaki selebar bahu, turunkan
+                tubuh seperti squat, kemudian dorong tubuh ke atas dengan melompat
+                setinggi mungkin, lalu mendarat dengan lembut kembali ke posisi squat.
+            </p>
+            <p>
+                <strong>Manfaat:</strong> Squat jump meningkatkan kekuatan otot kaki dan
+                daya tahan kardiovaskular.
+            </p>
+            <p>
+                <strong>Rekomendasi Jumlah:</strong>
+                <ul>
+                    <li><strong>Pemula:</strong> Sekitar 15-20 squat jump per menit.</li>
+                    <li><strong>Menengah:</strong> Sekitar 20-30 squat jump per menit.</li>
+                    <li><strong>Lanjutan:</strong> Lebih dari 30 squat jump per menit.</li>
+                </ul>
+            </p>
+
+            <div class="timer-settings">
+                <label for="workout-duration-3">Durasi Latihan (detik):</label>
+                <input type="number" id="workout-duration-3" value="60">
+                <label for="rest-duration-3">Durasi Istirahat (detik):</label>
+                <input type="number" id="rest-duration-3" value="30">
+                <label for="interval-count-3">Jumlah Interval:</label>
+                <input type="number" id="interval-count-3" value="3">
+            </div>
+            <div id="interval-display-3">Interval: -</div>
+
+            <button id="start-button-3" onclick="startCountdown(3)">Mulai Latihan</button>
+            <button id="mark-done-3" class="mark-done" onclick="markAsDone(3)">Mark as Done</button>
+
+            <h2>Latihan 4: Air Squat</h2>
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/zhGVm7IBPuY?si=tQBQN37cH-Q2nkDK"
+                    title="Air Squat Demonstration"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <p>
+                <strong>Teknik:</strong> Berdirilah dengan kaki selebar bahu. Turunkan
+                pinggul dan lutut sambil menjaga punggung tetap lurus. Pastikan lutut
+                tidak melewati jari-jari kaki.
+            </p>
+            <p>
+                <strong>Manfaat:</strong> Air squat memperkuat otot kaki, glutes, dan
+                meningkatkan keseimbangan.
+            </p>
+            <p>
+                <strong>Rekomendasi Jumlah:</strong>
+                <ul>
+                    <li><strong>Pemula:</strong> Sekitar 20-30 air squat per menit.</li>
+                    <li><strong>Menengah:</strong> Sekitar 30-40 air squat per menit.</li>
+                    <li><strong>Lanjutan:</strong> Lebih dari 40 air squat per menit.</li>
+                </ul>
+            </p>
+
+            <div class="timer-settings">
+                <label for="workout-duration-4">Durasi Latihan (detik):</label>
+                <input type="number" id="workout-duration-4" value="60">
+                <label for="rest-duration-4">Durasi Istirahat (detik):</label>
+                <input type="number" id="rest-duration-4" value="30">
+                <label for="interval-count-4">Jumlah Interval:</label>
+                <input type="number" id="interval-count-4" value="3">
+            </div>
+            <div id="interval-display-4">Interval: -</div>
+
+            <button id="start-button-4" onclick="startCountdown(4)">Mulai Latihan</button>
+            <button id="mark-done-4" class="mark-done" onclick="markAsDone(4)">Mark as Done</button>
+
+            <h2>Latihan 5: (Akan Segera Dibuka!)</h2>
+            <div class="video-container">
+                <div class="coming-soon">
+                    <p>Latihan 5 Akan Segera Dibuka!</p>
+                </div>
+            </div>
+            <button id="notify-button">Notifikasi Pembukaan Latihan 5</button>
+
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <p id="progress-text">0% Selesai</p>
+                <button id="reset-button">Reset</button>
+            </div>
+
+            <audio id="audio-latihan" src="latihan.mp3" preload="auto"></audio>
+            <audio id="audio-istirahat" src="istirahat.mp3" preload="auto"></audio>
+            <audio id="audio-selamat" src="selamat.mp3" preload="auto"></audio>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
